@@ -31,7 +31,7 @@ int main()
 					scanf("%d",&firstValue);
 					printf("Insert the subtrahend(second value):");
 					scanf("%d", &secondValue);
-					printf("The result of the subtraction of the values %d + %d is %d.\n", firstValue, secondValue,firstValue-secondValue);
+					printf("The result of the subtraction of the values %d - %d is %d.\n", firstValue, secondValue,firstValue-secondValue);
 				}break;
 				case 3:
 				{
@@ -39,13 +39,14 @@ int main()
 					scanf("%d",&firstValue);
 					printf("Insert the multiplicand(second value):");
 					scanf("%d", &secondValue);
-					printf("The result of the sum  of the values %d + %d is %d.\n", firstValue, secondValue,firstValue*secondValue);
+					printf("The result of the Multiplication of the values %d * %d is %d.\n", firstValue, secondValue,firstValue*secondValue);
 				}
 				break;
 				case 4 :
 				{
 					printf("Insert the dividend(first value):");
 					scanf("%d",&firstValue);
+
 					do
 					{
 						printf("Insert the divisor(second value):");
@@ -53,11 +54,12 @@ int main()
 						if(secondValue == 0)
 							printf("The divisor cannot be 0.");
 					}while(secondValue == 0);
-					printf("The result of the division  of the values %d + %d is %d.\n", firstValue, secondValue,firstValue/secondValue);
+
+					printf("The result of the division  of the values %d / %d is %d.\n", firstValue, secondValue,firstValue/secondValue);
 				}break;
 				default:
 				{
-					printf("Selected number Unknowed");
+					printf("Selected number Unknown");
 				}break;
 			}
 		}
