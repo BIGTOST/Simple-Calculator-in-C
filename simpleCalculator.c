@@ -94,7 +94,7 @@ void calculatorLogic(int selector)
 		default:
 		{
 			printf("Selected number unknown. Please try again. \n");
-		}
+		
 		break;
 	}
 }
