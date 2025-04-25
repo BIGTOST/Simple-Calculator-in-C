@@ -82,7 +82,10 @@ void calculatorLogic(int selector)
 				printf("Insert the divisor(second value):");
 				scanf("%d", &secondValue);
 				if(secondValue == 0)
-					printf("The divisor cannot be 0.");
+				{
+					printf("The divisor cannot be 0.\n");
+			
+				}
 			}while(secondValue == 0);
 
 			printf("The result of the division  of the values %d / %d is %d.\n", firstValue, secondValue,firstValue/secondValue);
@@ -90,8 +93,9 @@ void calculatorLogic(int selector)
 		break;
 		default:
 		{
-			printf("Selected number Unknown");
-		}break;
+			printf("Selected number unknown. Please try again. \n");
+		}
+		break;
 	}
 }
 
